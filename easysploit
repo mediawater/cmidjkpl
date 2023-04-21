@@ -37,7 +37,7 @@ ip=$(ip addr show wlan0 | awk '/inet / {print $2}' | cut -d/ -f 1)
 (10) Contact with us - Our accounts
 '
  
-service postgresql start
+pg_ctl -D /data/data/com.termux/files/usr/var/lib/postgresql start
 exe='1'
 apk='2'
 py='3'
